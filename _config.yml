@@ -37,7 +37,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/blog/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -49,25 +49,25 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             서울 생활
     url:               /example/
-  - title:             Documentation
+  - title:             공부
     url:               /docs/
-  - title:             About
+  - title:             오뚜기
     url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  - title:             LICENSE
+  - title:             아
     url:               /LICENSE/
-  - title:             NOTICE
+  - title:             정말
     url:               /NOTICE/
-  - title:             CHANGELOG
+  - title:             배고파
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2023. Start maked HomePage.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
