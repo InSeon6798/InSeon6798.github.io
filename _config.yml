@@ -184,7 +184,14 @@ kramdown:
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
 # These settings are specific to Hydejack.
-
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-5HQPK7RHNC"
+    anonymize_ip         : # true, false (default)
+    
 hydejack:
   # Configure the order of complementary content on blog posts
   post_addons:         [about, newsletter, related, random, comments]
