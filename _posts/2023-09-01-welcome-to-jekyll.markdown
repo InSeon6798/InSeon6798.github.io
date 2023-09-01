@@ -21,8 +21,6 @@ css,htmljs로 만들어 봤는데 깃허브 블로그 만들어보기!!!
 오 여기 마치 그림처럼 만들어주는 기능인가 신기하군
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+[깃허브 주소][inseon-gh]
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[inseon-gh]:   https://github.com/InSeon6798/InSeon6798.github.io

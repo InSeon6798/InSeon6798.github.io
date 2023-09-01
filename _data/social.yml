@@ -206,3 +206,6 @@ keybase:
 download:
   name: Download
   icon: icon-box-add
+SNS:
+  name: instagram
+  icon: icon-SNS
