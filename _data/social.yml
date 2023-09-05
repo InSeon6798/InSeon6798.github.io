@@ -209,3 +209,4 @@ download:
 SNS:
   name: instagram
   icon: icon-SNS
+  prepend: "https://www.instagram.com/activity_cactus"
