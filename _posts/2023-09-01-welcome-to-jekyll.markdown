@@ -18,7 +18,7 @@ css,htmljs로 만들어 봤는데 깃허브 블로그 만들어보기!!!
 
 
 {% highlight ruby %}
-오 여기 마치 그림처럼 만들어주는 기능인가 신기하군
+신기하군
 {% endhighlight %}
 
 [깃허브 주소][inseon-gh]
