@@ -12,9 +12,13 @@ permalink: /docs/
 
 
 ## 정보처리기사
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
+* [1과목]{:.heading.flip-title} --- How to install and run Hydejack.
+* [2과목]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
+* [3과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
+{:.related-posts.faded}
+* [4과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
+{:.related-posts.faded}
+* [5과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
 
 ## 영어
@@ -31,7 +35,7 @@ permalink: /docs/
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-[install]: install.md
+[install]: 1.md
 [upgrade]: upgrade.md
 [config]: config.md
 [basics]: basics.md
