@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 1과목
+title: 소프트웨어 설계
 description: >
   This chapter covers the many configuration options of Hydejack, allowing you to tailor it to your needs.
 hide_description: true
