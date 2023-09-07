@@ -12,8 +12,8 @@ permalink: /docs/
 
 
 ## 정보처리기사
-* [1과목]{:.heading.flip-title} --- How to install and run Hydejack.
-* [2과목]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
+* [소프트웨어설계]{:.heading.flip-title} --- How to install and run Hydejack.
+* [소프트웨어개발]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
 * [3과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
 * [4과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
@@ -35,7 +35,8 @@ permalink: /docs/
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-[1과목]: study1.md
+[소프트웨어설계]: study1.md
+[소프트웨어개발]: study2.md
 [upgrade]: upgrade.md
 [config]: config.md
 [basics]: basics.md
