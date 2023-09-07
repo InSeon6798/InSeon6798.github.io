@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 title: 정보처리기사
 description: >
   10/02일 제 3회 정처기!! 합격하자!! 공부하자!!!
