@@ -149,6 +149,11 @@ defaults:
       seo:
         type:          WebPage
   - scope:
+      type:            studys
+    values:
+      seo:
+        type:          WebPage
+  - scope:
       type:            featured_categories
     values:
       seo:
@@ -198,6 +203,10 @@ hydejack:
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other, comments]
+
+    # Configure the order of complementary content on project pages
+  study_addons:      [about, newsletter, other, comments]
+
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    false
@@ -309,6 +318,9 @@ collections:
     permalink:         /projects/:path/
     output:            true
 
+  studys:
+    permalink:         /studyss/:path/
+    output:            true
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
@@ -428,3 +440,30 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+          jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: post
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    posts:
+      layout: post
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    studys:
+      layout: Study
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+      links:
+        - title: Study Link
+          url: https://docs.com

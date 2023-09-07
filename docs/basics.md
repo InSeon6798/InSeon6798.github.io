@@ -280,6 +280,7 @@ projects_page: projects.md
 selected_posts:
   # - _posts/2017-05-03-javascripten.md
   - /blog/2023-07-26-example-content/
+  - /blog/study1/
 posts_page: /blog/
 featured: false
 ---
