@@ -35,7 +35,7 @@ permalink: /docs/
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-[1과목]: 1.md
+[1과목]: study1.md
 [upgrade]: upgrade.md
 [config]: config.md
 [basics]: basics.md
