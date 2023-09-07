@@ -8,22 +8,16 @@ sitemap: false
 permalink: /docs/
 ---
 
-1. 인터넷에서 멀티캐스트를 위하여 사용되는 프로토콜
-Should you think something is missing,
- [please let me know](https://complainrevolutionist.tistory.com/130).
-Should you discover a mistake in the docs (or a bug in general) feel free to [open an issue](https://github.com/hydecorp/hydejack/issues) on GitHub.
-
-While this manual tries to be beginner-friendly, as a user of Jekyll it is assumed that you are comfortable running shell commands and editing text files.
-{:.note}
+해야 할 공부, 관심사, 자기개발
 
 
-## Getting started
+## 정보처리기사
 * [Install]{:.heading.flip-title} --- How to install and run Hydejack.
 * [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
 * [Config]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
 
-## Using Hydejack
+## 영어
 * [Basics]{:.heading.flip-title} --- How to add different types of content.
 * [Writing]{:.heading.flip-title} --- Producing markdown content for Hydejack.
 * [Scripts]{:.heading.flip-title} --- How to include 3rd party scripts on your site.
