@@ -23,4 +23,4 @@ css,htmljs로 만들어 봤는데 깃허브 블로그 만들어보기!!!
 
 [깃허브 주소][inseon-gh]
 
-[inseon-gh]:   https://github.com/InSeon6798/InSeon6798.github.io
+[inseon-gh]:   https://github.com/InSeon6798/InSeon6798.github.io.git
