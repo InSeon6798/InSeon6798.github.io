@@ -17,15 +17,6 @@ sitemap: false
 * 소프트웨어 위기 : SW가 HW를 따라가지 못함(개발이용, 개발지연, 인력부족 및 인건비 상승, 성능부족, 유지보수비용 증가)
 
 
-
-
-When making changes to `_config.yml`, it is necessary to restart the Jekyll process for changes to take effect.
-{:.note}
-
-0. this unordered seed list will be replaced by toc as unordered list
-{:toc}
-
-
 ## 재공학 : `시스템변경이나, 재구조화 통해 생산성 증가`
 
 * 재공학의 장점 : 개발시간 및 비용감소, 품질 및 생산성 향상, 신뢰성향상, 지식의 공유, 개발 실패위험 감소
@@ -37,28 +28,13 @@ When making changes to `_config.yml`, it is necessary to restart the Jekyll proc
 *SADT : CASE의 도구로 분석 및 설계 관련 자동화 도구, 블록다이어그램을 채택
 
 
-The `url` is the domain of your site, including the protocol (`http` or `https`). For this site, it is
+[재공학, 역공학](https://blog.naver.com/dilector/222841916131)
 
 ~~~yml
-# file: `_config.yml`
-url: https://qwtel.com
+# file: `재공학,역공학.yml`
+url: https://blog.naver.com/dilector/222841916131
 ~~~
 
-You don't need to provide this property when hosting on GitHub Pages or Netlify.
-{:.note}
-
-If your entire Jekyll blog is hosted in a subdirectory of your page, provide the path in `baseurl` with a leading `/`, but no trailing `/`,
-e.g.
-
-~~~yml
-# file: `_config.yml`
-baseurl: /hydejack
-~~~
-
-Otherwise, provide the empty string `''`
-
-You don't need to provide this property when hosting on GitHub Pages or Netlify.
-{:.note}
 
 ## 소프트웨어 개발 방법론
 
@@ -141,11 +117,13 @@ You don't need to provide this property when hosting on GitHub Pages or Netlify.
 
 * UML : 시스템 분석, 설계 구현 등 산출물을 명세화, 시각화할 때 사용하는 모델링 언어
 
-- 기능적 관점 : 사용사레 모델링 (Use Case다이어그램 - 객체관계 추상화)
+-- 기능적 관점 : 사용사레 모델링 (Use Case다이어그램 - 객체관계 추상화)
+-- 정적 관점 : SW내부의 구조관계 나타냄 (class 다이어그램)
+-- 동적 관점 : 시스템 내부동작(순차 다이어그램 등)
 
-
-
-
+* 럼바우 객체지향 분석 기법 (객체 모델링 기법)
+-- 시스템이 요구하는 객체를 찾아서 속성과 연산식별 및 객체들간 관계를 규정해 다이어그램으로 표시
+-- 객체모델링 (객체를 다이어그램으로) vs
 
 
 
