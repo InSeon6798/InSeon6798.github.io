@@ -22,7 +22,7 @@ permalink: /docs/
 {:.related-posts.faded}
 
 ## 영어
-* [Basics]{:.heading.flip-title} --- How to add different types of content.
+* [토익단어]{:.heading.flip-title} --- How to add different types of content.
 * [Writing]{:.heading.flip-title} --- Producing markdown content for Hydejack.
 * [Scripts]{:.heading.flip-title} --- How to include 3rd party scripts on your site.
 * [Build]{:.heading.flip-title} --- How to build the static files for deployment.
@@ -37,7 +37,7 @@ permalink: /docs/
 
 [소프트웨어설계]: study1.md
 [소프트웨어개발]: study2.md
-[upgrade]: upgrade.md
+[토익단어]: toeicword.md
 [config]: config.md
 [basics]: basics.md
 [writing]: writing.md
