@@ -7,8 +7,17 @@ hide_description: true
 sitemap: false
 ---
 
-Once Jekyll is running, you can start with basic configuration by adding various entries to `_config.yml`. 
-Besides the documentation here, you can also read the [annotated config file][config].
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
+
+## 1. 소프트웨어 공학 개념
+
+* 시스템 기본요소 : 입력, 처리, 출력, 제어, 피드백
+* 소프트웨어 위기 : SW가 HW를 따라가지 못함(개발이용, 개발지연, 인력부족 및 인건비 상승, 성능부족, 유지보수비용 증가)
+
+
+
 
 When making changes to `_config.yml`, it is necessary to restart the Jekyll process for changes to take effect.
 {:.note}
