@@ -38,7 +38,7 @@ permalink: /docs/
 [소프트웨어설계]: study1.md
 [소프트웨어개발]: study2.md
 [토익단어]: toeicword.md
-[config]: config.md
+[영어회화]: en_study1.md
 [basics]: basics.md
 [writing]: writing.md
 [scripts]: scripts.md
