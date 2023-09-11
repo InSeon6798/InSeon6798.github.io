@@ -123,540 +123,122 @@ url: https://blog.naver.com/dilector/222841916131
 
 * 럼바우 객체지향 분석 기법 (객체 모델링 기법)
 -- 시스템이 요구하는 객체를 찾아서 속성과 연산식별 및 객체들간 관계를 규정해 다이어그램으로 표시
--- 객체모델링 (객체를 다이어그램으로) vs
+-- 객체모델링 (객체를 다이어그램으로) vs 동적모델링 (상태다이어그램으로) vs 기능모델링 (자료흐름을 표시)
 
 
+### UI환경분석
 
+## 소프트웨어 아키텍처 (구조도, 설계도)
+* ISO/ IEC_9126 : SW품질특성과 평가를 위한 국제표준
+-- 외부지표와 내부지표가 있는데 기능성, 신뢰성, 사용성, 효율성, 유지보수성, 이식성의 특성을 가짐 (not, 학습성)
 
-When hosting on [GitHub Pages](https://pages.github.com/) the `url` is `https://<username>.github.io`
-(unless you are using a custom domain).
+### UI표준 및 지침
 
-The `baseurl` depends on the kind of page you are hosting.
+* UI : 인간과 SW사이에 의사소통하는 매개체
+-- 특성 : 직관성, 유효성, 학습성, 유연성
+-- UI설계지침 : 사용자중심, 일관성, 단순성, 가시성, 표준화, 접근성, 결과예측가능, 명확성, 오류발생해결
 
-* When hosting a *user or organization page*, use the empty string `''`.
-* When hosting *project page*, use `/<reponame>`.
+### UI설계
 
-For for information on the types of pages you can host on GitHub, see the
-[GitHub Help article](https://help.github.com/articles/user-organization-and-project-pages/).
+* UI설계 도구 : 와이어프레임 (와이어 이용 개략적 작성), 목업(Mockup, 실물크기 정적모형), 프로토타입(Prototype-실작동), 스토리보드
 
+* 감성공학 : 인간의 소망으로 이미지, 감성을 구체적 제품으로 설계
+-- HCI는 인간과 컴퓨터의 인터페이스(상호작용 연구)
 
-## Changing accent colors and sidebar images
-Hydejack allows you to choose the background image of the sidebar, as well as the accent color
-(color of the links, selection and focus outline, etc...).
+### 소프트웨어 설계 모델링 : "무엇을"에서 "어떻게"로 관점전환
 
-~~~yml
-# file: `_config.yml`
-accent_image: /assets/img/sidebar-bg.jpg
-accent_color: rgb(79,177,186)
-~~~
+## 소프트웨어 설게 분류
+* 상위 설계 : 아키텍처(구조)설계, 데이터 설계, 시스템 분할, 인터페이스 설계 (골조)
 
-I recommend using a blurred image in order for the text to remain readable.
-If you save a blurred image as JPG, it will also drastically reduce its file size.
-{:.note}
+* 하위설계 : 모듈설계, 자료구조 설계, 알고리즘 설계 (구체, 상세설계)
 
-The `accent_image` property also accepts the special value `none` which will remove the default image.
+## 소프트웨어 구조도
+* Fan-in : 한 모듈을 제어하는 상위모듈 수
+* Fan-out : 한 모듈이 제어하는 하위모듈 수
 
-If your sidebar image contains bright colors, the white text can be difficult to read. In this case, consider setting
-`invert_sidebar: true` in the front matter to invert the text colors in the sidebar. 
-Use [front matter defaults][fmd] to enable this on all pages (see below).
+## 코드종류
+* 순차코드 : 각각 정의된 순서에 따라 열거된 항목에 대해, 각각의 순서에 따라 부여된 고유의 식별 코드
 
-Note that these values can be overwritten on a per-page basis, i.e. you can create a unique look for each page.
-You can also apply a certain look to all posts in a category via [front matter defaults][fmd], e.g.:
+* 블록코드 : 공통특성 따라 각 블록안에 일련번호 배정 코드
 
-```yml
-# file: `_config.yml`
-defaults:
-  - scope:
-      path:         hydejack/
-    values:
-      accent_image: /assets/img/hydejack-bg.jpg
-      accent_color: rgb(38,139,210)
-```
+* 그룹분류식 코드 : 대중소 분류로 구분, 순서대로 번호 부여
 
-### Theme color
-Hydejack also supports the `theme_color` property. When set, it will change the background color of the sidebar, as well as set the `theme_color` property in the [Web App Manifest][wam]. In some browsers, such as Chrome on Android, this will change the color of the browser's UI components.
+* 10진 분류코드 : 좌측은 그룹분류, 우측은 10진수의 원칙 따라 세분화 (도서분류)
 
-~~~yml
-# file: `_config.yml`
-theme_color:  rgb(25,55,71)
-~~~
+* 표의숫자 코드 : 코드대상 항목의 길이, 넓이, 무게 등을 그대로 사용
 
-Just like `accent_*` properties, the theme color can be overridden on a per-page basis by setting it in the front matter.
+* 연상코드 : 기호코드 (TV-39-C, 39인치컬러TV)
 
-[wam]: https://web.dev/add-manifest/#theme-color
+* 코드오류종류 : 필사오류, 전위오류(위치), 이중오류, 생략오류, 추가오류, 임의오류
 
-## Changing fonts
-Hydejack lets you configure the font of regular text and headlines, and it has built-in support for Google Fonts.
-There are three keys in `_config.yml` associated with this: `font`, `font_heading` and `google_fonts`.
-The defaults are:
+## 
+* 데이터(자료)흐름도 (DFD, data flow diagram) : 다차원적 그래프 또는 버블차트
+-- 프로세스, 자료흐름, 자료저장소, 단말 등으로 구성
 
-~~~yml
-# file: `_config.yml`
-font:         Noto Sans, Helvetica, Arial, sans-serif
-font_heading: Roboto Slab, Helvetica, Arial, sans-serif
-google_fonts: Roboto+Slab:700|Noto+Sans:400,400i,700,700i
-~~~
+* 자료사정(DD, data dictionary) : 자료명세와 속성을 조직화한 도구
 
-`font` and `font_heading` must be valid CSS `font-family` values. When using Google Fonts make sure to provide at least one fallback.
+### 모듈 : 재사용가능, 자체적으로 컴파일 가능, 기간과 노동력 절감
 
-The `google_fonts` key is the string necessary to fetch the fonts from Google.
-You can get it from the download page at [Google Fonts](https://fonts.google.com) after you've selected one or more fonts:
+## 결합도 :  겹합도 약하면, 독립성 향상, 유지보수 쉬워짐
+* [약->강] 결합도
+스템프결합도 - 제어결합도 - 외부결합도 - 공통결합도 - 내용 결합도 (내-공-외-제-스-자)
 
-![Where to get the google_fonts string](../assets/img/docs/google-fonts.png){:width="600" height="398" loading="lazy"}
+## 응집도 : 모듈안 요소의 서로 관련된 정도
+* [약에서 강으로] 응집도
+우연적 응집도 - 논리적 응집도 - 절차적 응집도 - 교환적 응집도 - 순차적 응집도 - 기능적 응집도 (기-순-교-절-논-우)
 
+## 효과적인 모듈화 설게 방법 : 복잡성과 중복성을 줄이고 일관성을 유지
 
-### Removing Google Fonts
-If you prefer not to use Google Fonts and remove all associated code from the site,
-set the `google_fonts` key to `false`.
+## 재사용과 공통 모듈
+* 재사용 : 검즈오딘 기능을 파악해 재구성 - 함수객체/애플리케이션/컴포넌트
+* N-S도표 : 구조적 프로그램의 순차, 선택, 반복구조를 사각형으로 도식화해 알고리즘을 표현 (화살표 아니야ㅑ)
 
-The `no_google_fonts` parameter has been removed in v9 and no longer has any effect.
-{:.note }
+### SW아키텍처 패턴 : 아키텍처 패턴, 계층패턴, MVC패턴, 클라이언트 서버 패턴, 파이프필터, 브로ㅓ, 블랙보드, 이벤트버스, 인터프리터 
 
+* 파이프필터 : 데이터흐름을 생성하고 처리하는 시스템으로 파이프 통해 받은 데이터를 변경하고 결과를 전송함
 
-## Choosing a blog layout
-Hydejack features three layouts for showing your blog posts.
+### 객체지향 설계
 
-* The [`list` layout][posts] only shows the title and groups the posts by year of publication.
-* The [`grid` layout][grid]\* is exclusive to the PRO Version and will show a content card (with `image`) for each post.
-* The [`blog` layout][blog] is a traditional paginated layout and shows the title and an excerpt of each post.
+* 객체지향 분석 (Object Oriented)
+-현실세계 대상체인 개체(Entity)를 속성(Attribute-데이터값)과 메소드(Method -함수)로 결합해 객체로 표현
 
-[blog]: https://hydejack.com/blog/
-[posts]: https://hydejack.com/posts/
-[grid]: https://hydejack.com/blog/hydejack/
+* 객체지향 구성요소
+-Class : 유사한 객체를 정의한 집단으로 속성+행위
+-Object : 데이터와 함수를 묶어 캡슐화하는 대상
+-Messeage : Object간의 통신
 
-In order to use the `list` or `grid` layout add the following front-matter to a new markdown file:
+* 객체지향의 5가지 특징 : 캡슐화, 정보은닉, 추상화, 상속성, 다형성
 
-~~~yml
----
-layout: list # or `grid`
-title:  Home
----
-~~~
+* 객체지향의 설계원칙(SOLID) : 단일책임원칙, 개방과 폐쇄의 원칙, 리스코프치환의 원칙, 인터페이스 분리 원칙, 의존역전 원칙
 
-If you want to use the `blog` layout, you need to add `jekyll-paginate` to your `Gemfile` and to the `plugins` list in your config file:
+* 객체지향 개발방법론
+-BOOCH
+-OOSE
+-OMT : 객체지향분석, 시스템 설계, 객체모델링 - 동적 모델링 - 기능 모델링구성
+-Coad와 Your-don방법 : E-R다이어그램 사용
 
-```ruby
-# file: `Gemfile`
-gem "jekyll-paginate"
-```
+### 디자인패턴 : 자주사용 설계형태를 정형화해 유형별 템플릿 작성
+* GOF(Gangs of Four) 디자인패턴 : 대표적인 디자인 패턴(생성, 구조, 행위)
 
-```yml
-# file: `_config.yml`
-plugins:
-  - jekyll-paginate
-```
+### 인터페이스 요구사항 확인
 
-You also need to add the `paginate` and `paginate_path` keys to your config file, e.g.
+* 요구사항 검증방법
+-프로트타이핑 : 시제품 제공
+-테스트 설계 :  현실적으로 가능한지 검토
+-CASE : 요구사항 변경의 추적과 분석으로 요구사항 관리
+-요구사항 검토 : 동료검토, 워크스루, 인스펙션
+
+### 인터페이스 대상 식별
+
+### 미들웨어 솔루션 : 클라이언트와 서버간 통신 담당
+* 데이터베이스
+* TP-Monitor : 기업 전산망의 시스텥ㅁ이 정지되는 것을 막아 주는 소프트웨어 서버
+* ORB: 브로커 역할, 객체 사이의 통신
+* RPC : 원격 프로시저를 로컬 프로시저처럼 호출하는 방식
+* MOM : 메시지 기반 비동기식 메시지 전달 (오라클의 메시지 등)
+* WAS: DB서버와 같이 동적 서버 콘텐츠를 수행, HTTP 통한 어플리케이션
+* OTM(객체트랜젝션 모니터) : 객체기반 인터페이스
 
-~~~yml
-# file: `_config.yml`
-paginate:      10
-paginate_path: '/:num/'
-~~~
-
-The `blog` layout needs to be applied to a file with the `.html` file extension
-and the `paginate_path` needs to match the path to the `index.html` file.
-To match the `paginate_path` above, put a `index.html` with the following front matter in the root directory:
-
-~~~yml
-# file: `index.html`
----
-layout: blog
-title: Blog
----
-~~~
-
-For more information see [Pagination](https://jekyllrb.com/docs/pagination/).
-
-
-### Using the `blog` layout in a subdirectory
-If you want to use the blog layout at a URL like `/my-blog/`, create the following folder structure:
-
-~~~
-├── my-blog
-│   └── index.html
-└── _config.yml
-~~~
-
-You can use the same `index.html` as before and place it in the subdirectory.
-
-~~~yml
-# file: `my-blog/index.html`
----
-layout: blog
-title: Blog
----
-~~~
-
-In your config file, make sure the `paginate_path` matches the name of the subdirectory:
-
-~~~yml
-# file: `_config.yml`
-paginate:      10
-paginate_path: /my-blog/:num/ #!!
-~~~
-
-To add an entry in the sidebar to your blog directory, see [Adding an entry to the sidebar](./basics.md#adding-an-entry-to-the-sidebar).
-
-
-## Adding an author
-At a bare minimum, you should add an `author` key with a `name` and `email` sub-key
-(used by the [feed plugin](https://github.com/jekyll/jekyll-feed)) to to your config file:
-
-~~~yml
-# file: `_config.yml`
-author:
-  name:  Florian Klampfer
-  email: mail@qwtel.com
-~~~
-
-If you would like the author to be displayed in the about section below a post or project\*, add an `about` key and provide markdown content. I recommend using the YAML pipe `|` syntax, so you can include multiple paragraphs:
-
-~~~yml
-# file: `_config.yml`
-author:
-  name:  Florian Klampfer
-  email: mail@qwtel.com
-  about: |
-    Hi, I'm Florian or @qwtel...
-
-    This is another paragraph.
-~~~
-
-
-### Adding an author's picture
-If you'd like for the author's picture to appear in addition the about text (see above), you can either use the [`jekyll-avatar`](https://github.com/benbalter/jekyll-avatar) plugin or provide URLs to images manually.
-
-To use the plugin, add it to your `Gemfile` and the list of `plugins` in your config file:
-
-```ruby
-# file: `Gemfile`
-gem "jekyll-avatar"
-```
-
-```yml
-# file: `_config.yml`
-plugins:
-  - jekyll-avatar
-```
-
-Run `bundle install` for the changes to take effect.
-
-Make sure you have provided a GitHub username in your config file (`github_username`),
-or to the author key (`author.social.github`, `author.github.username`, or `author.github`).
-See [Adding social media icons](#adding-social-media-icons) for more.
-
-To set an image manually, you have to provide an URL to the author's `picture` key:
-
-~~~yml
-# file: `_config.yml`
-author:
-  picture:  /assets/img/me.jpg
-~~~
-
-If you'd like to provide multiple versions for screens with different pixel densities,
-you can provide `path` and `srcset` keys instead:
-
-~~~yml
-# file: `_config.yml`
-author:
-  picture:
-    path:   /assets/img/me.jpg
-    srcset:
-      1x:   /assets/img/me.jpg
-      2x:   /assets/img/me@2x.jpg
-~~~
-
-The keys of the `srcset` hash will be used as image descriptors. For more information on `srcset`, see the [documentation at MDN][mdnsrcset], or [this article from CSS-Tricks][csssrcset].
-
-[mdnsrcset]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset
-[csssrcset]: https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/
-
-
-### Adding social media icons
-Hydejack supports a variety of social media icons out of the box. These are defined on a per-author basis, so make sure you've followed the steps in [Adding an author](#adding-an-author).
-
-If you are using the gem-based version of Hydejack, download [`social.yml`][social] and put it into `_data` in the root directory. This is necessary because gem-based themes do not support including `_data`.
-{:.note}
-
-You can add a link to a social network by adding an entry to the `social` key in to an author.
-It consists of the name of the social network as key and your username within that network as value, e.g.
-
-~~~yml
-# file: `_config.yml`
-author:
-  social:
-    twitter: qwtel
-    github:  qwtel
-~~~
-
-Check out [`authors.yml`][authors] to see which networks are available.
-You can also follow the steps [here](advanced.md) to add your own social media icons.
-
-You can change the order in which the icons appear by moving lines up or down, e.g.
-
-~~~yml
-# file: `_config.yml`
-author:
-  social:
-    github:  qwtel # now github appears first
-    twitter: qwtel
-~~~
-
-To get an overview of which networks are available and how a typical username in that network looks like,
-see the included [`authors.yml`][authors].
-
-Should providing a username not produce a correct link for some reason, you can provide a complete URL instead, e.g.
-
-~~~yml
-# file: `_config.yml`
-author:
-  social:
-    youtube: https://www.youtube.com/channel/UCu0PYX_kVANdmgIZ4bw6_kA
-~~~
-
-You can add any platform, even if it's not defined in [`social.yml`][social], by providing a complete URL. However, a fallback icon <span class="icon-link"></span> will be used when no icon is available. Supplying your own icons is an [advanced topic](advanced.md).
-{:.note}
-
-
-### Adding an email, RSS icon or download icon
-If you'd like to add an email <span class="icon-mail"></span>, RSS <span class="icon-rss2"></span>, or download <span class="icon-box-add"></span> icon to the list, add the `email`, `rss`, or `download` key, e.g.:
-
-~~~yml
-# file: `_config.yml`
-author:
-  social:
-    email:    mail@qwtel.com
-    rss:      {{ site.url }}{{ site.baseurl }}/feed.xml # make sure you provide an absolute URL
-    download: https://github.com/hydecorp/hydejack/archive/v9.1.6.zip
-~~~
-
-
-## Enabling comments
-Hydejack supports comments via [Disqus](https://disqus.com/). Before you can add comments to a page you need to register and add your site to Disqus' admin console. Once you have obtained your "Disqus shortname", you include it in your config file:
-
-~~~yml
-# file: `_config.yml`
-disqus: <disqus shortname>
-~~~
-
-Now comments can be enabled by adding `comments: true` to the front matter.
-
-~~~yml
----
-layout:   post
-title:    Hello World
-comments: true
----
-~~~
-
-You can enable comments for entire classes of pages by using [front matter defaults][fmd].
-E.g. to enable comments on all posts, add to your config file:
-
-~~~yml
-# file: `_config.yml`
-defaults:
-  - scope:
-      type: posts
-    values:
-      comments: true
-~~~
-
-[fmd]: https://jekyllrb.com/docs/configuration/#front-matter-defaults
-
-
-## Enabling Google Analytics
-Enabling Google Analytics is as simple as setting the `google_analytics` key.
-
-~~~yml
-# file: `_config.yml`
-google_analytics: UA-XXXXXXXX-X
-~~~
-
-To remove Google Analytics and all associated code from the site, set the `google_analytics` key to `false`.
-
-
-### Using a custom analytics provider
-If you want to use a different analytics provider such as [Matomo](https://matomo.org/), you can add its code snippet to `_includes/my-body.html` (create if it doesn't exist).
-The [default file][mybody] contains an example.
-
-## Changing built-in strings
-You can change the wording of built-in strings like "Related Posts" or "Read more" in `_data/strings.yml`.
-
-If you are using the gem-based version the file doesn't exist, but you can get the default file [here][strings].
-
-You will frequently find markers like `<!--post_title-->`.
-You can place them freely within your string and they will be replaced with the content they refer to.
-
-You may also use this feature to translate the theme into different languages.
-In this case you should also set the `lang` key to your config file, e.g.
-
-```yml
-# file: `_config.yml`
-lang: cc-ll
-```
-
-where `cc` is the 2-letter country code and `ll` specifies a 2-letter location code, e.g.: `de-at`.
-
-You may also change the strings used for formatting dates and times (look out for the `date_formats` key), but be aware that the values you provide need to be valid Ruby [format directives](http://ruby-doc.org/core-2.4.1/Time.html#method-i-strftime).
-
-
-## Adding legal documents
-If you have pages for contact data, privacy policy, cookie policy, etc. you can add links to them in the footer by listing them under the `legal` key in your config file as follows:
-
-```yml
-# file: `_config.yml`
-legal:
-  - title: Impress
-    url:  /impress/
-  - title: Cookies Policy
-    url:  /cookies-policy/
-```
-
-When using Hydejack's offline feature, the pages listed here will be downloaded and cached when loading the page for the first time.
-
-## Enabling math blocks
-
-Hydejack supports [math blocks][ksynmath] with either [KaTeX] or [MathJax]. 
-
-The _MathJax implementation_ comes with a client-side runtime and works on GitHub Pages. 
-It is the more heavy-weight of the two and doesn't work without JavaScript enabled. 
-Due to the size of the complete MathJax package, it only works partially with offline support enabled.
-
-The _KaTeX implementation_ pre-renders the KaTeX output during site building.
-It's more lightweight because it does not ship a client-side runtime and therefore works without JavaScript.
-In my opinion, it is the more elegant solution, but it requires a JavaScript runtime on the machine that builds the site,
-i.e. it does not work on GitHub Pages.
-
-You can switch between the two implementations by changing the `kramdown.math_engine` key to either `katex` or `mathjax` in your config file.
-
-```yml
-# file: `_config.yml`
-kramdown:
-  math_engine:         katex
-  math_engine_opts:    {}
-```
-
-The KaTeX implementation also requires the `kramdown-math-katex` gem in your `Gemfile`. 
-If you intend to use MathJax instead, this step is not required.
-
-```ruby
-# file: `Gemfile`
-gem "kramdown-math-katex"
-```
-
-There are a couple of things to know about this gem:
-*  It is not supported on GitHub Pages. 
-   You have to build the site on your machine before uploading to GitHub,
-   or use a more permissive cloud building tool such as Netlify. 
-*  You need some kind of JavaScript runtime on your machine.
-   Usually installing [NodeJS](https://nodejs.org/en/download/) will suffice. 
-   Alternatively, adding `gem "duktape"` will also do.
-   For more, see <https://github.com/kramdown/math-katex#documentation>
-
-Before you add math content, remember to run `bundle install` and restart Jekyll.
-
-[ksynmath]: https://kramdown.gettalong.org/syntax.html#math-blocks
-[katex]: https://khan.github.io/KaTeX/
-[mathjax]: https://www.mathjax.org/
-
-
-## Adding custom Favicons and App Icons
-### Changing the Favicon
-By default, Hydejack will use the Favicon from `/assets/icons/favicon.ico` and Apple Touch Icon from `/assets/icons/icon-192x192.png`.
-You can either override these files, or override the path in the config file via `favicon` and `app_touch_icon` keys:
-
-```yml
-# file: "_config.yml"
-favicon: /favicon.ico
-apple_touch_icon: /assets/img/blog/getout_company.png
-```
-
-### Changing the App Icons
-By default, Hydejack includes its own favicon, as well as app icons in 8 different resolutions.
-
-| Name               | Resolution |
-|:-------------------|-----------:|
-| `icon-512x512.png` |  `512x512` |
-| `icon-384x384.png` |  `384x384` |
-| `icon-192x192.png` |  `192x192` |
-| `icon-152x152.png` |  `152x152` |
-| `icon-144x144.png` |  `144x144` |
-| `icon-128x128.png` |  `128x128` |
-| `icon-96x96.png`   |    `96x96` |
-| `icon-72x72.png`   |    `72x72` |
-
-To change the default icons you have to replce all of them. To make this manageable, I recommend using the following tools:
-
-First, use the [Maskable.app Editor](https://maskable.app/editor) to confine your logo/picture to the "minimum safe area". More on maskable app icons, see [this article on web.dev](https://web.dev/maskable-icon). 
-Make sure the base image is at least 512x512 pixels in size.
-
-Then use the [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) to automatically resize the icons. 
-Upload the icon downloaded from Maskable.app and then click "Generate .zip". 
-In the zip, ignore the `manifest.json` and look for the `icons` folder. Copy it into the `assets` folder of your site.
-
-To change the favicon, place your own `favicon.ico` (32x32, PNG) into `assets/icons`.
-
-
-## Adding a cookies banner*
-
-~~~yml
-# file: `_config.yml`
-hydejack:
-  cookies_banner: true
-~~~
-
-Enabling this setting will show a notice at the top of the page to new visitors.
-You can change the wording of the notice in `_data/strings.yml`
-with the `cookies_banner.text` and `cookies_banner.okay` keys:
-
-~~~yml
-# file: `_data/strings.yml`
-cookies_banner:
-  text: This site uses cookies. [Markdown allowed](/cookies-policy/)!
-  okay: Okay
-~~~
-
-
-## Enabling newsletter boxes*
-To enable showing newsletter subscription boxes below each post and project,
-provide your [Tinyletter] username to the `tinyletter` key in the config file.
-
-```yml
-# file: `_config.yml`
-tinyletter:  <tinyletter username>
-```
-
-To edit the content of the newsletter box, open `_data/strings.yml`, and change the entries under the `tinyletter` key.
-
-If want to use a different mailing provider you can build your own form, and insert it into `_includes/my-newsletter.html`. The file includes an example form for MailChimp, where you need to fill in `site.mailchimp.action` and `site.mailchimp.hidden_input` (you can get these from MailChimp).
-
-To build a completely new from, you can use [the same CSS classes as Bootstrap](https://getbootstrap.com/docs/4.0/components/forms/). Note that only form, grid and utility classes are available. Check out [Forms by Example](../forms-by-example.md){:.heading.flip-title} for more examples.
-
-[tinyletter]: https://tinyletter.com/
-
-
-## Enabling Dark Mode*
-Buyers of the PRO version have access to a dark-themed version of Hydejack.
-
-Dark mode can be enabled in `config.yml` under the `hydejack` key and has three settings and two adjustments:
-
-```yml
-# file: `_config.yml`
-hydejack:
-  dark_mode:
-    dynamic: true
-    sunrise: 6
-    sunset:  18
-    icon:    true
-    always:  false
-```
-
-Setting `dynamic`, will enable dark mode based on the client's local time (unlike location-based sunset calculations, this approach does not require a permission form the user). You can adjust `sunrise` and `sunset` to change when to show the light/dark theme.
-
-Setting `icon` will show a switch to alternate between the light and dark mode at the top of the page.
-
-Finally, setting `always` will cause dark mode to become the default theme at all times (combine with `dynamic: false`).
 
 Continue with [소프트웨어 개발](study2.md){:.heading.flip-title}
 {:.read-more}
