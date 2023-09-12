@@ -186,7 +186,7 @@ comments:
   provider : disqus
 
 disqus_shortname : inseon6798-github-io
-hyvor_talk_website_id : 
+# hyvor_talk_website_id : 2
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!

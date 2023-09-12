@@ -6,6 +6,8 @@ description: >
 hide_description: true
 redirect_from:
   - /download/
+
+key: page-about
 ---
 
 # 객체지향
