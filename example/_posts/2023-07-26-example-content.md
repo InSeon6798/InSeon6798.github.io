@@ -6,7 +6,6 @@ description: >
 sitemap: false
 hide_last_modified: true
 
-title: 댓글창
 key : content
 ---
 
