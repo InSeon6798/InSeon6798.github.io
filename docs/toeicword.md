@@ -7,7 +7,9 @@ hide_description: true
 sitemap: false
 ---
 receive	받다, 받아들이다 
+
 standly	예비품, 대기자, 대기자 명단, 대기자용의
+
 clear off the talbe	식탁을 깨끗이 치우다
 banister	난간
 on the floor	무일푼의 제작중인 빈털터리의
