@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: Post
 title: 소프트웨어 설계
 description: >
   This chapter covers the many configuration options of Hydejack, allowing you to tailor it to your needs.
 hide_description: true
 sitemap: false
+
+key : content
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list
