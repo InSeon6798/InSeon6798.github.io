@@ -6,6 +6,7 @@ description: >
 hide_description: true
 sitemap: false
 permalink: /docs/
+key : content
 ---
 
 해야 할 공부, 관심사, 자기개발
