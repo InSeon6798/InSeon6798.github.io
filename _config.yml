@@ -182,6 +182,11 @@ kramdown:
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
 # disqus:                <username>
+comments:
+  provider : disqus
+
+disqus_shortname : inseon6798-github-io
+hyvor_talk_website_id : 
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
