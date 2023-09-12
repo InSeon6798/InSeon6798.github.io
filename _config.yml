@@ -139,7 +139,7 @@ defaults:
 
   # # You can use the following to enable comments on all posts.
   - scope:
-      path: ""
+      path: docs
       type: posts
     values:
       # layout: single
