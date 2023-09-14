@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 하루만 참으면 된다
+title: 연차는 짧고 오늘은 길다
 description: >
   9/12~14 첫 연차
 sitemap: false
