@@ -24,7 +24,7 @@ I'm on a diet
 나는 다이어트 중이에요
 
 I'm in love with him
-나는 그와 사람에 빠졌어요
+나는 그와 사랑에 빠졌어요
 
 
 ## I'm not 나는 ~하지 않아
