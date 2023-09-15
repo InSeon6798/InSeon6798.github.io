@@ -15,9 +15,9 @@ author1:
   picture:
     path:           assets\img\blog\cute.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            https://via.placeholder.com/128x128
-      2x:            https://via.placeholder.com/256x256
+    # srcset:
+    #   1x:            https://via.placeholder.com/128x128
+    #   2x:            https://via.placeholder.com/256x256
     src : "/assets/img/blog/cute.jng"
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
@@ -73,7 +73,7 @@ author2:
     나의 최종목표는 숨만쉬어도 돈이 들어오는 것이다.
     돈많은 백수가 되어 돈쓰면서 돌아다니고 싶다....
     왜.. 사람은 돈을 벌려면 일을 해야하는가
-    이상 영원히 놀기를 희망하는 도비였다.
+    이상 영원히 놀기를 희망하는 도비
 
     Open `_data/authors.yml`에서 수정
 
