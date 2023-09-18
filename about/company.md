@@ -5,7 +5,7 @@ description: >
   인턴 업무
 hide_description: true
 sitemap: false
-permalink: HOEM/about/
+permalink: /about/
 key : content
 ---
 
