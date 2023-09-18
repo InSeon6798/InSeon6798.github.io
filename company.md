@@ -16,6 +16,8 @@ key : content
 
 ## Vue
 * [Vue설치]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
+
+
 * [3과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
 * [4과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
