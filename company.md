@@ -1,6 +1,6 @@
 ---
 layout: list
-title: 공부좀 해라
+title: 회사 과제
 description: >
   Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
 hide_description: true
@@ -9,11 +9,10 @@ permalink: /about/
 key : content
 ---
 
-해야 할 공부, 관심사, 자기개발
+회사 프로젝트 과제
 
-
-## 정보처리기사
-* [소프트웨어설계]{:.heading.flip-title} --- How to install and run Hydejack.
+## SOLID
+* [SOLID]{:.heading.flip-title} --- How to install and run Hydejack.
 * [소프트웨어개발]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
 * [3과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
@@ -36,7 +35,7 @@ key : content
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-[소프트웨어설계]: study1.md
+[SOILD]: SOLID.md
 [소프트웨어개발]: study2.md
 [토익단어]: toeicword.md
 [영어회화]: en_study1.md
