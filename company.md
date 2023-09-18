@@ -13,7 +13,9 @@ key : content
 
 ## SOLID
 * [SOLID]{:.heading.flip-title} --- How to install and run Hydejack.
-* [소프트어개발]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
+
+## Vue
+* [Vue설치]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
 * [3과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
 * [4과목]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
@@ -36,7 +38,7 @@ key : content
 {:.related-posts.faded}
 
 [SOILD]: SOLID.md
-[소프트웨어개발]: study2.md
+[Vue설치]: Vue.md
 [토익단어]: toeicword.md
 [영어회화]: en_study1.md
 [basics]: basics.md

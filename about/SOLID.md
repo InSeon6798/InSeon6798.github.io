@@ -1,12 +1,13 @@
 ---
-layout: about
+layout: page
 image: /assets/img/blog/getout_company.jng
 description: >
   회사 활동
 hide_description: true
-redirect_from:
-  - /download/
+sitemap: false
 ---
+
+
 
 # 객체지향
 
