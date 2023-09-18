@@ -8,16 +8,8 @@ sitemap: false
 permalink: /about/
 key : content
 ---
----
-layout: list
-title: 공부좀 해라
-description: >
-  Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
-hide_description: true
-sitemap: false
-permalink: /docs/
-key : content
----
+
+
 회사 프로젝트 과제
 
 ## SOLID
